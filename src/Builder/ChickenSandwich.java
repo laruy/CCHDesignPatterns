@@ -1,26 +1,24 @@
 package Builder;
 
-import product.Sandwich;
-
-public class ChickenSandwich implements MakeSandwich {
-    private Sandwich sandwich;
+public class ChickenSandwich implements Sandwich {
+    private product.MakeSandwich makeSandwich;
 
     public ChickenSandwich() {
-        this.sandwich = new Sandwich();
+        this.makeSandwich = new product.MakeSandwich();
     }
 
     @Override
     public void setBreadType() {
-        sandwich.setBreadType("White");
+        makeSandwich.setBreadType("White");
     }
 
     @Override
     public void setFilling() {
-        sandwich.setFilling("Chicken and Cheese");
+        makeSandwich.setFilling("Chicken and Cheese");
     }
 
     @Override
-    public Sandwich getResult() {
-        return sandwich;
+    public product.MakeSandwich getResult() {
+        return makeSandwich;
     }
 }

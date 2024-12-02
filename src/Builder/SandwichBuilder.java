@@ -1,7 +1,7 @@
 package Builder;
 
 public class SandwichBuilder {
-    public void makeSandwich(MakeSandwich builder) {
+    public void makeSandwich(Sandwich builder) {
         builder.setBreadType();
         builder.setFilling();
     }

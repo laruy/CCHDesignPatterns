@@ -1,6 +1,6 @@
 package product;
 
-public class Sandwich {
+public class MakeSandwich {
     private String breadType;
     private String filling;
 

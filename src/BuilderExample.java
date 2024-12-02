@@ -1,7 +1,6 @@
 package main;
 
 import Builder.*;
-import product.Sandwich;
 
 public class BuilderExample {
     public static void main(String[] args) {
@@ -11,13 +10,13 @@ public class BuilderExample {
         // Builder para VeggieSandwich
         VeggieSandwich veggieBuilder = new VeggieSandwich();
         sandwichBuilder.makeSandwich(veggieBuilder);
-        Sandwich veggieSandwich = veggieBuilder.getResult();
-        veggieSandwich.display();
+        product.MakeSandwich veggieMakeSandwich = veggieBuilder.getResult();
+        veggieMakeSandwich.display();
 
         // Builder para ChickenSandwich
         ChickenSandwich chickenBuilder = new ChickenSandwich();
         sandwichBuilder.makeSandwich(chickenBuilder);
-        Sandwich chickenSandwich = chickenBuilder.getResult();
-        chickenSandwich.display();
+        product.MakeSandwich chickenMakeSandwich = chickenBuilder.getResult();
+        chickenMakeSandwich.display();
     }
 }
